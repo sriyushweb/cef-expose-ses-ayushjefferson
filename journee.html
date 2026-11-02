@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr" class="js-off">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Une journée au CEF | Les CEF en question</title>
+  <meta name="description" content="Frise interactive d&#x27;une journée au centre éducatif fermé de Saint-Venant, d&#x27;après le reportage de Phosphore (janvier 2013), avec le rôle illustré par chaque étape.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+  <header class="entete">
+    <div class="entete__inner">
+      <a class="logo" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect width="32" height="32" rx="3" fill="#2c5646"/><rect x="4" y="5" width="24" height="2.5" fill="#fff"/><rect x="4" y="24.5" width="24" height="2.5" fill="#fff"/><rect x="6" y="5" width="2.6" height="22" fill="#fff"/><rect x="11.5" y="5" width="2.6" height="22" fill="#fff"/><rect x="17" y="5" width="2.6" height="22" fill="#fff"/><rect x="23.4" y="9" width="2.6" height="18" fill="#e0703f" transform="rotate(14 24.7 27)"/></svg><span>Les CEF en question<small>Exposé de SES, seconde</small></span></a>
+      <button class="bouton-menu" type="button" aria-expanded="false" aria-controls="navigation">Menu</button>
+      <nav class="nav" id="navigation" aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="roles.html">Les rôles</a></li>
+          <li><a href="journee.html" aria-current="page">Une journée</a></li>
+          <li><a href="parcours.html">Le parcours</a></li>
+          <li><a href="debat.html">Limites et débat</a></li>
+          <li><a href="glossaire.html">Glossaire</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li><a href="conclusion.html">Conclusion</a></li>
+          <li><a href="sources.html">Sources</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <nav class="ariane" aria-label="Fil d'Ariane"><ol><li><a href="index.html">Accueil</a></li><li aria-current="page">Une journée au CEF</li></ol></nav>
+  <main id="contenu" tabindex="-1">
+    <div class="page">
+
+<p class="surtitre">Le document principal en action</p>
+<h1>Une journée au CEF de Saint-Venant</h1>
+<p class="chapeau colonne">Nous avons reconstruit la journée racontée dans le reportage de Phosphore. Chaque étape est reliée à un ou plusieurs rôles du CEF. Cliquez sur une étape, utilisez le curseur ou les boutons « précédent » et « suivant ».</p>
+
+<div class="encadre colonne">
+  <p><strong>Précautions.</strong> Le reportage date de janvier 2013 et décrit un seul centre. Les pages 28 et 29 ne donnent pas l'heure du réveil ni le programme de l'après-midi : nous ne les avons pas inventés. Les autres heures viennent de l'article.</p>
+</div>
+
+<section class="frise" data-frise aria-labelledby="titre-frise">
+  <h2 id="titre-frise" class="visuellement-cache">Frise de la journée</h2>
+  <ol class="frise__etapes">
+    <li><button class="frise__btn" type="button" aria-pressed="true" aria-controls="etape-0"><span class="heure">Avant 9 h</span><span class="quoi">Départs et questions</span></button></li>
+<li><button class="frise__btn" type="button" aria-pressed="false" aria-controls="etape-1"><span class="heure">9 h</span><span class="quoi">Tennis</span></button></li>
+<li><button class="frise__btn" type="button" aria-pressed="false" aria-controls="etape-2"><span class="heure">Matinée</span><span class="quoi">Cours</span></button></li>
+<li><button class="frise__btn" type="button" aria-pressed="false" aria-controls="etape-3"><span class="heure">Fin de matinée</span><span class="quoi">Équithérapie</span></button></li>
+<li><button class="frise__btn" type="button" aria-pressed="false" aria-controls="etape-4"><span class="heure">Midi</span><span class="quoi">Déjeuner</span></button></li>
+<li><button class="frise__btn" type="button" aria-pressed="false" aria-controls="etape-5"><span class="heure">Soir</span><span class="quoi">Le plus dur</span></button></li>
+<li><button class="frise__btn" type="button" aria-pressed="false" aria-controls="etape-6"><span class="heure">21 h 30</span><span class="quoi">Extinction des feux</span></button></li>
+  </ol>
+  <div class="frise__curseur">
+    <label for="curseur-heure">Avancer dans la journée</label>
+    <input type="range" id="curseur-heure" min="0" max="6" step="1" value="0">
+    <button class="bouton" type="button" id="frise-precedent">Précédent</button>
+    <button class="bouton bouton--plein" type="button" id="frise-suivant">Suivant</button>
+    <span id="frise-position" class="ref" aria-live="polite"></span>
+  </div>
+  <div class="frise__detail">
+    <section class="frise__etape-texte" id="etape-0">
+  <h2>Le matin, avant les activités : les questions des jeunes</h2>
+  <div class="doc doc--article">
+    <span class="doc__etiquette">D'après l'article de Phosphore</span>
+    <p>Dès l'arrivée de la journaliste, les éducateurs sont entourés de questions. Kévin a reçu l'autorisation du juge de rentrer chez son père, pour la première fois depuis deux mois. Il s'inquiète du trajet et demande : « Vous ne me faites pas passer par Paris ? » <span class="ref">(<a href="sources.html#src-phosphore">Phosphore, 2013, p. 28</a>)</span>.</p>
+<p>Valentine, elle, discute de l'argent pour s'habiller : chaque jeune reçoit 70 euros par mois, et elle voudrait un peu plus pour acheter des bottes <span class="ref">(<a href="sources.html#src-phosphore">Phosphore, 2013, p. 28</a>)</span>.</p>
+<p>Ce jour-là, le centre n'accueille que dix jeunes au lieu de douze : l'un est en fugue et un autre vient d'être renvoyé pour comportement dangereux <span class="ref">(<a href="sources.html#src-phosphore">Phosphore, 2013, p. 28</a>)</span>.</p>
+  </div>
+  <p><strong>Rôle(s) illustré(s) :</strong> <a class="etiquette-role" href="roles.html#role-transition">5. Préparer la sortie</a><a class="etiquette-role" href="roles.html#role-sanction">1. Sanctionner et protéger</a></p>
+  <p><strong>Ce que nous en retenons :</strong> Le retour chez le père, décidé par le juge, prépare la sortie. La fugue et le renvoi montrent que la contrainte ne marche pas pour tous.</p>
+</section>
+<section class="frise__etape-texte" id="etape-1">
+  <h2>9 heures : début des activités, séance de tennis</h2>
+  <div class="doc doc--article">
+    <span class="doc__etiquette">D'après l'article de Phosphore</span>
+    <p>Les activités commencent à 9 heures. Nora et Audrey ont tennis avec des adultes du centre. Nora, 14 ans, répond à un responsable qui lui demande d'aller chercher une balle. Selon lui, elle a grandi dans la rue « avec des codes différents » et ne connaissait pas le vouvoiement <span class="ref">(<a href="sources.html#src-phosphore">Phosphore, 2013, p. 28</a>)</span>.</p>
+<p>L'encadré « Rebondir » explique que le sport aide les jeunes à réapprendre les codes de la vie en société <span class="ref">(<a href="sources.html#src-phosphore">Phosphore, 2013, p. 28</a>)</span>.</p>
+  </div>
+  <p><strong>Rôle(s) illustré(s) :</strong> <a class="etiquette-role" href="roles.html#role-educatif">2. Éduquer</a></p>
+  <p><strong>Ce que nous en retenons :</strong> Le sport sert d'outil éducatif : respecter des règles et parler aux adultes autrement.</p>
+</section>
+<section class="frise__etape-texte" id="etape-2">
+  <h2>Pendant la matinée : cours avec la professeure du centre</h2>
+  <div class="doc doc--article">
+    <span class="doc__etiquette">D'après l'article de Phosphore</span>
+    <p>Valentine travaille un problème de maths avec la professeure du centre. Le collège voisin a accepté de l'accueillir deux semaines plus tard, et elle compte passer le brevet en fin d'année <span class="ref">(<a href="sources.html#src-phosphore">Phosphore, 2013, p. 29</a>)</span>.</p>
+<p><em>L'article ne donne pas l'heure exacte de ce cours.</em></p>
+  </div>
+  <p><strong>Rôle(s) illustré(s) :</strong> <a class="etiquette-role" href="roles.html#role-scolaire">3. Scolariser et insérer</a><a class="etiquette-role" href="roles.html#role-transition">5. Préparer la sortie</a></p>
+  <p><strong>Ce que nous en retenons :</strong> La reprise de l'école prépare le retour à une vie normale.</p>
+</section>
+<section class="frise__etape-texte" id="etape-3">
+  <h2>Fin de matinée : séance d'équithérapie</h2>
+  <div class="doc doc--article">
+    <span class="doc__etiquette">D'après l'article de Phosphore</span>
+    <p>Les jeunes vont au contact des chevaux. Selon la psychologue du CEF, ils y sont confrontés à leurs propres réactions, car « l'animal ne triche pas avec eux » <span class="ref">(<a href="sources.html#src-phosphore">Phosphore, 2013, p. 29</a>)</span>.</p>
+  </div>
+  <p><strong>Rôle(s) illustré(s) :</strong> <a class="etiquette-role" href="roles.html#role-soins">4. Soigner et accompagner</a><a class="etiquette-role" href="roles.html#role-educatif">2. Éduquer</a></p>
+  <p><strong>Ce que nous en retenons :</strong> Un travail sur les émotions et le comportement, encadré par une professionnelle.</p>
+</section>
+<section class="frise__etape-texte" id="etape-4">
+  <h2>À l'heure du déjeuner : un incident, puis un échange</h2>
+  <div class="doc doc--article">
+    <span class="doc__etiquette">D'après l'article de Phosphore</span>
+    <p>Didiono fait le service. Une assiette tombe, il s'énerve, claque la porte et un éducateur le suit. Plus tard, il accepte d'ouvrir sa chambre à la journaliste : elle est très bien rangée <span class="ref">(<a href="sources.html#src-phosphore">Phosphore, 2013, p. 29</a>)</span>.</p>
+<p>Il a commis plusieurs délits, « de la conduite sans permis au braquage », avant d'arriver au CEF <span class="ref">(<a href="sources.html#src-phosphore">Phosphore, 2013, p. 29</a>)</span>.</p>
+  </div>
+  <p><strong>Rôle(s) illustré(s) :</strong> <a class="etiquette-role" href="roles.html#role-educatif">2. Éduquer</a><a class="etiquette-role" href="roles.html#role-sanction">1. Sanctionner et protéger</a></p>
+  <p><strong>Ce que nous en retenons :</strong> Les éducateurs gèrent la colère au moment où elle arrive, au lieu de seulement punir.</p>
+</section>
+<section class="frise__etape-texte" id="etape-5">
+  <h2>Le soir : « le moment le plus dur »</h2>
+  <div class="doc doc--article">
+    <span class="doc__etiquette">D'après l'article de Phosphore</span>
+    <p>Pour Didiono, le moment le plus dur de la journée est le soir <span class="ref">(<a href="sources.html#src-phosphore">Phosphore, 2013, p. 29</a>)</span>. Il explique qu'il ne peut pas rester seul, car il a « toujours vécu en bande » <span class="ref">(<a href="sources.html#src-phosphore">Phosphore, 2013, p. 29</a>)</span>.</p>
+  </div>
+  <p><strong>Rôle(s) illustré(s) :</strong> <a class="etiquette-role" href="roles.html#role-soins">4. Soigner et accompagner</a><a class="etiquette-role" href="roles.html#role-sanction">1. Sanctionner et protéger</a></p>
+  <p><strong>Ce que nous en retenons :</strong> La contrainte se fait sentir surtout le soir, quand le jeune se retrouve seul.</p>
+</section>
+<section class="frise__etape-texte" id="etape-6">
+  <h2>21 h 30 : extinction des feux</h2>
+  <div class="doc doc--article">
+    <span class="doc__etiquette">D'après l'article de Phosphore</span>
+    <p>Les lumières s'éteignent à 21 h 30. Didiono raconte que les jeunes courent parfois d'une chambre à l'autre et se cachent quand les éducateurs passent <span class="ref">(<a href="sources.html#src-phosphore">Phosphore, 2013, p. 29</a>)</span>.</p>
+<p>Le Contrôleur général des lieux de privation de liberté recommande que le personnel reste à proximité immédiate des jeunes, y compris la nuit <span class="ref">(<a href="sources.html#src-cglpl-reco">CGLPL, 2020</a>)</span>.</p>
+  </div>
+  <p><strong>Rôle(s) illustré(s) :</strong> <a class="etiquette-role" href="roles.html#role-sanction">1. Sanctionner et protéger</a><a class="etiquette-role" href="roles.html#role-educatif">2. Éduquer</a></p>
+  <p><strong>Ce que nous en retenons :</strong> Des horaires fixes et une surveillance la nuit : le cadre continue après les activités.</p>
+</section>
+  </div>
+</section>
+
+<section class="colonne">
+  <h2>Ce que montre cette journée</h2>
+  <p>La journée est très organisée : des horaires fixes, des activités encadrées et des adultes présents à chaque moment. On retrouve les cinq rôles du CEF. La contrainte est présente (le centre est fermé, les sorties sont décidées par le juge, il y a un couvre-feu), mais la plus grande partie du temps est consacrée à l'éducation, à l'école et au suivi des jeunes.</p>
+  <p>La journée montre aussi les limites : un jeune est en fugue et un autre a été renvoyé <span class="ref">(<a href="sources.html#src-phosphore">Phosphore, 2013, p. 28</a>)</span>. Le CEF ne réussit donc pas avec tous les jeunes. Nous développons ce point dans la partie <a href="debat.html">Limites et débat</a>.</p>
+  <p class="rangee-boutons"><a class="bouton" href="roles.html">Revoir les cinq rôles</a><a class="bouton bouton--plein" href="parcours.html">Voir le parcours d'un mineur</a></p>
+</section>
+
+      <p class="haut-de-page"><a href="#contenu">Revenir en haut de la page</a></p>
+    </div>
+  </main>
+  <footer class="pied">
+    <div class="pied__inner">
+      <div>
+        <p><strong>Les CEF en question</strong>. Exposé C de sciences économiques et sociales, classe de seconde, lycée Camille Claudel, Palaiseau (Essonne). Réalisé par Ayush et Jefferson.</p>
+        <p>Thème : l'État de droit assure des libertés mais peut aussi les restreindre.</p>
+      </div>
+      <ul aria-label="Pages d'information">
+        <li><a href="mentions-legales.html">Mentions légales et CGU</a></li>
+        <li><a href="confidentialite.html">Confidentialité</a></li>
+        <li><a href="sources.html">Sources</a></li>
+        <li><a href="conclusion.html#grille">Grille d'évaluation</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
